@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked by BANGLADESH CYBER SECURITY 24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Creepster&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            min-height: 100vh; /* Ensure the body fills the screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: 'Creepster', cursive;
+            color: #ff0000;
+            text-align: center;
+            background: black;
+            overflow: auto; /* Allow scrolling if content overflows */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://giffiles.alphacoders.com/119/119969.gif') center/cover no-repeat;
+            z-index: -2;
+            filter: blur(8px); /* Apply blur effect */
+            animation: fireEffect 4s infinite alternate;
+        }
+
+        /* Overlay to enhance readability */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+            z-index: -1;
+        }
+
+        .container {
+            z-index: 1;
+            animation: shake 10.5s infinite alternate;
+            padding-top: 20px;
+        }
+
+        .heading {
+            width: 100%;
+            max-height: 160px; /* Ensure it stays within the screen */
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 6px solid red;
+            box-shadow: 0 0 40px red, 0 0 80px darkred;
+            margin-top: -30px;
+        }
+
+        .red-bar {
+            background: linear-gradient(45deg, red, darkred);
+            color: yellow;
+            font-family: 'Metal Mania', cursive;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 24px;
+            border: 3px solid yellow;
+            box-shadow: 0 0 20px red;
+            margin: 10px 0;
+            animation: flicker 1s infinite;
+            text-transform: uppercase;
+        }
+
+        .message {
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #ff3333;
+            text-shadow: 2px 2px 15px red;
+            animation: pulseText 0.03s infinite;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            background: red;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 0 20px red, 0 0 30px darkred;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: flicker 3s infinite;
+            cursor: pointer;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 50px red, 0 0 80px darkred;
+        }
+        .footer-line {
+            font-size: 18px;
+            color: #ffff00;
+            text-shadow: 2px 2px 10px red;
+            animation: fadeInOut 5s infinite;
+            margin-top: 30px;
+        }
+
+
+        audio {
+            margin-top: 20px;
+            border-radius: 10px;
+            background: #222;
+            padding: 10px;
+            box-shadow: 0 0 20px red;
+        }
+
+        @keyframes pulseLogo {
+            0% { transform: scale(1); box-shadow: 0 0 20px red; }
+            50% { transform: scale(1.1); box-shadow: 0 0 60px darkred; }
+            100% { transform: scale(1); box-shadow: 0 0 20px red; }
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes shake {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(3px, -3px); }
+            50% { transform: translate(-3px, 3px); }
+            75% { transform: translate(3px, 3px); }
+            100% { transform: translate(-3px, -3px); }
+        }
+
+        @keyframes fireEffect {
+            0% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(90deg); }
+            100% { filter: hue-rotate(0deg); }
+        }
+
+        @keyframes pulseText {
+            0% { color: red; }
+            50% { color: yellow; }
+            100% { color: red; }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div> <!-- Overlay added here for dark background -->
+   
+    <img src="head.png" alt="Heading" class="heading"><br>
+    <img src="logo.png" alt="Logo" class="logo">
+  
+    <div class="red-bar">⚠️ Hacked by BANGLADESH CYBER SECURITY 24 ⚠️</div>
+    <div class="container">
+        <p class="message">🔥 SILENT ENTRY, LOUD IMPACT. BANGLADESH CYBER SECURITY 24 STRIKES AGAIN.🔥</p>
+        <p class="message">💀 WE WALK THE DIGITAL DARKNESS. YOU WON’T SEE US COMING. 💀</p>
+    </div>
+    <audio src="bg.mp3" autoplay loop controls></audio><br> 
+    <a href=" https://www.facebook.com/Fs.Shanto.26" class="contact-btn">Contact Us</a>
+    
+    <div id="footer-line" class="footer-line"></div>
+
+    <script>
+        const footerLine = document.getElementById('footer-line');
+        const text = "This is just the beginning. The digital revolution is ours. Powered by BANGLADESH CYBER SECURITY 24";
+        let index = 0;
+
+        function typeFooterLine() {
+            if (index < text.length) {
+                footerLine.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeFooterLine, 100);  // Adjust the speed of typing effect (100ms per character)
+            }
+        }
+
+        window.onload = function() {
+            typeFooterLine();
+        };
+    </script>
+  
+</body>
+</html>
